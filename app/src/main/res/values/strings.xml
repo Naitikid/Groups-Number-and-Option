@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Group and Option demo</string>
+    <string name="groups_number">Groups Number</string>
+    <string name="option">Option</string>
+    <string name="submit">Submit</string>
+    <string name="option1">Option 1</string>
+    <string name="erro">please Enter Valid </string>
+    <string name="groupcheck_number">Groupcheck Number</string>
+    <string name="text">text</string>
+    <string name="group_number">Group Number</string>
+
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimens_20dp"
+        android:layout_marginTop="@dimen/dimens_10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/showtext"
+                android:layout_width="@dimen/dimens_0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="@string/group_number"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_marginTop="@dimen/dimens_10dp"
+                android:id="@+id/test"
+                android:layout_width="@dimen/dimens_0dp"
+                android:gravity="center"
+                android:text="@string/text"
+                app:layout_constraintTop_toBottomOf="@id/showtext"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="@dimen/dimens_10dp"
+                android:id="@+id/secondRecyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/test"
+                />
+
+              <!--  <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="@dimen/dimens_0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/option"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginHorizontal="@dimen/dimens_20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/test"
+                     />-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>
